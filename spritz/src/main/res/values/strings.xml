@@ -2,7 +2,6 @@
     <string name="app_name">SpritzGlass</string>
     <string name="trigger_start">Forbes news</string>
     <string name="loading">Loading…</string>
-    <string name="settings">Settings</string>
     <string name="read_with">Read with Spritz</string>
     <string name="speed">Speed</string>
     <string name="error">Error</string>
