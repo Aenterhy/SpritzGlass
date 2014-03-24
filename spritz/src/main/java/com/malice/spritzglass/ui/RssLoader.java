@@ -26,7 +26,6 @@ import static com.malice.spritzglass.ui.SpritzActivity.TAG_TEXT;
  * @author Aenterhy.
  */
 public class RssLoader extends BaseScrollActivity {
-    private final String TAG = RssLoader.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
