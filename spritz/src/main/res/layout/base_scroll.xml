@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.glass.widget.CardScrollView
+            style="@style/CardScrollView"
+            android:visibility="gone"
+            android:id="@+id/card_scroll" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:keepScreenOn="true"
+            android:id="@+id/progress"
+            class="com.google.android.glass.menu.SliderMenuView$SliderMenuItemView"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="@dimen/menu_icon_size"
+                    android:layout_height="@dimen/menu_icon_size"
+                    android:layout_marginRight="@dimen/menu_icon_margin"
+                    android:src="@drawable/ic_launcher"
+                    android:adjustViewBounds="true" />
+
+                <TextView
+                    android:textSize="@dimen/menu_text_size"
+                    android:ellipsize="end"
+                    android:text="@string/loading"
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <com.malice.spritzglass.widgets.SliderView
+                android:id="@+id/slider"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="-12px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

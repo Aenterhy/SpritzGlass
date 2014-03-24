@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.malice.spritzglass">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:name=".SpritzGlass"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher">
+
+        <activity
+            android:name=".ui.SpritzActivity"
+            android:label="Spritz"
+            android:theme="@style/MenuTheme"
+            android:icon="@drawable/ic_launcher" />
+
+        <activity
+            android:name=".core.MessageActivity"
+            android:label="Spritz"
+            android:theme="@style/MenuTheme"
+            android:icon="@drawable/ic_launcher" />
+
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:label="Spritz"
+            android:theme="@style/MenuTheme"
+            android:icon="@drawable/ic_launcher" />
+
+        <activity
+            android:name=".ui.settings.cards.SpeedActivity"
+            android:label="Spritz"
+            android:theme="@style/MenuTheme" />
+
+        <activity
+            android:name=".ui.RssLoader"
+            android:label="Spritz"
+            android:theme="@style/MenuTheme"
+            android:icon="@drawable/ic_launcher">
+
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/trigger_start" />
+
+        </activity>
+
+
+    </application>
+
+</manifest>

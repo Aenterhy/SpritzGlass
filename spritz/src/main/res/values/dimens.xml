@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_short_important">90px</dimen>
+    <dimen name="text_xlarge">70px</dimen>
+    <dimen name="text_large">50px</dimen>
+    <dimen name="text_normal">40px</dimen>
+    <dimen name="text_small">34px</dimen>
+    <dimen name="text_xsmall">30px</dimen>
+    <dimen name="text_footer">26px</dimen>
+    <dimen name="text_megasmall">24px</dimen>
+
+    <dimen name="card_generic_padding">40.0px</dimen>
+    <dimen name="menu_text_size">70.0px</dimen>
+    <dimen name="menu_icon_margin">20.0px</dimen>
+    <dimen name="menu_icon_size">50.0px</dimen>
+    <dimen name="slider_bar_height">12.0px</dimen>
+
+    <dimen name="card_margin">40px</dimen>
+    <dimen name="qr_scanner_mask_width">40dp</dimen>
+    <dimen name="qr_scanner_mask_height">160dp</dimen>
+    <dimen name="generic_card_padding">40.0px</dimen>
+    <dimen name="medium_text_size">40.0px</dimen>
+
+    <item type="dimen" name="background_dim_amount">0.8</item>
+
+    <dimen name="fill_bar_width">40dp</dimen>
+    <dimen name="fill_bar_height">5dp</dimen>
+
+    <dimen name="lhs_width">240.0px</dimen>
+    <dimen name="rhs_left_padding">30.0px</dimen>
+    <dimen name="rhs_right_padding">40.0px</dimen>
+    <dimen name="rhs_vertical_padding">40.0px</dimen>
+    <dimen name="rhs_width">400.0px</dimen>
+    <dimen name="card_cover_art_width">280.0px</dimen>
+    <dimen name="card_cover_art_height">280.0px</dimen>
+    <dimen name="card_text_size_large">50.0px</dimen>
+    <dimen name="divider_size">30.0px</dimen>
+    <dimen name="tip_view_height">40.0px</dimen>
+</resources>

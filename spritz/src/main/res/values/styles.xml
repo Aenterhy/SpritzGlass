@@ -1,0 +1,242 @@
+<resources>
+
+    <style name="MenuTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ScannerImageMask">
+        <item name="android:background">#44000000</item>
+    </style>
+
+    <style name="Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Layout.Card">
+        <item name="android:background">@color/black</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Layout.Right">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Layout.Dark">
+        <item name="android:background">@color/black_transparent</item>
+    </style>
+
+    <style name="Layout.Center">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextView" parent="android:Widget.DeviceDefault.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextView.Subtitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextView.XLarge">
+        <item name="android:textSize">@dimen/text_xlarge</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="TextView.Footer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">bottom|right</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">@dimen/text_footer</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Brand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Loading">
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="TextView.Notification">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="TextView.Notification.Secondary">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="ProgressBar" parent="android:Widget.DeviceDefault.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="CardScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageView.Left">
+        <item name="android:layout_width">240px</item>
+        <item name="android:layout_height">360px</item>
+    </style>
+
+    <style name="ImageView.FullScreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Google Glass some ported styles-->
+    <style name="GenericCard">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="PaddedCard" parent="@style/GenericCard">
+        <item name="android:paddingLeft">@dimen/generic_card_padding</item>
+        <item name="android:paddingTop">@dimen/generic_card_padding</item>
+        <item name="android:paddingRight">@dimen/generic_card_padding</item>
+    </style>
+
+    <style name="OverlayText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="fontWeight">thin</item>
+    </style>
+
+    <style name="ErrorDialogText" parent="@style/OverlayText">
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ErrorDialogSubText" parent="@style/ErrorDialogText">
+        <item name="android:textSize">@dimen/text_footer</item>
+        <item name="fontWeight">light</item>
+    </style>
+
+    <style name="ContextualDialogTheme" parent="@android:style/Theme">
+        <item name="android:backgroundDimAmount">@dimen/background_dim_amount</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.ContextualDialog</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--<item name="android:colorBackgroundCacheHint">@android:color/transparent</item>-->
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="Animation.ContextualDialog" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/show_contextual</item>
+        <item name="android:windowExitAnimation">@anim/hide_contextual</item>
+    </style>
+
+    <style name="SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <!--<item name="android:thumb">@android:drawable/see</item>-->
+        <item name="android:thumbOffset">8px</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="TimelineLhs">
+        <item name="android:background">@color/background_dark_gray</item>
+    </style>
+
+    <style name="GenericCardRhs" parent="@style/GenericCard">
+        <item name="android:paddingLeft">@dimen/rhs_left_padding</item>
+        <item name="android:paddingTop">@dimen/rhs_vertical_padding</item>
+        <item name="android:paddingRight">@dimen/generic_card_padding</item>
+        <item name="android:paddingBottom">@dimen/rhs_vertical_padding</item>
+        <item name="android:layout_width">@dimen/rhs_width</item>
+    </style>
+
+    <style name="card_primary_text_large" parent="@style/OverlayText">
+        <item name="android:textSize">@dimen/card_text_size_large</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="card_secondary_text_large" parent="@style/OverlayText">
+        <item name="android:textSize">@dimen/card_text_size_large</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="SmallOverlayText" parent="@style/OverlayText">
+        <item name="android:textSize">@dimen/text_small</item>
+        <item name="fontWeight">light</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    android:keepScreenOn="true"
+    style="@style/Layout.Center">
+
+    <com.andrewgiang.textspritzer.lib.SpritzerTextView
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:typeface="monospace"
+        android:id="@+id/spritzerTextView" />
+
+</LinearLayout>

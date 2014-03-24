@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black_transparent"
+    android:paddingLeft="40px"
+    android:paddingRight="40px"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/settingIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_speed"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/messageTitle"
+        android:paddingTop="0dp"
+        android:layout_width="wrap_content"
+        style="@style/ErrorDialogText"
+        android:textSize="@dimen/text_small"
+        android:paddingBottom="0dp"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:background="@color/gray"
+        android:progressDrawable="@drawable/seek_bar"
+        android:id="@+id/seekBar"
+        android:thumb="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/valueText"
+        style="@style/ErrorDialogSubText"
+        android:layout_marginTop="7dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:singleLine="false" />
+</LinearLayout>
