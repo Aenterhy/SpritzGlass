@@ -1,8 +1,10 @@
 SpritzGlass
 ===========
 
-Simple Forbes Rss reader built using Spritz reading technique
+Simple Forbes Rss reader built using [Spritz](http://www.spritzinc.com/) reading technique
 
-Uses this library: https://github.com/andrewgiang/SpritzerTextView
+Uses [SpritzerTextView](https://github.com/andrewgiang/SpritzerTextView) library 
 
-Video demo: https://www.youtube.com/watch?v=zV-ivPJxvAs
+Video demo at  [YouTube](https://www.youtube.com/watch?v=zV-ivPJxvAs)
+
+P.S: This project is not related with spritzinc.
